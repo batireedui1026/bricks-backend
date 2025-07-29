@@ -65,8 +65,8 @@ export const createRegistration = async (
       email,
       paymentAmount,
       paymentStatus,
-      expireAt: new Date(Date.now() + 25 * 60 * 1000),
-      // expireAt: new Date(Date.now() + 2 * 60 * 1000),
+      // expireAt: new Date(Date.now() + 25 * 60 * 1000),
+      expireAt: new Date(Date.now() + 1 * 60 * 1000),
     });
 
     console.log("Registration ID:", registration._id.toHexString());

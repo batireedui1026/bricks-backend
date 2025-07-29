@@ -192,7 +192,7 @@ export const downloadPayment = async (req: Request, res: Response) => {
 //   await Registration.findByIdAndUpdate(paymentId, {
 //     paymentStatus: "paid",
 //     expireAt: null,
-//     paymentAmount: 40,
+//     paymentAmount: 85000,
 //     paidAt: new Date(),
 //   });
 //   // энд төлсөн төлөв өөрчлөх
@@ -207,7 +207,7 @@ export const callbackWebhook = async (req: Request, res: Response) => {
     await Registration.findByIdAndUpdate(paymentId, {
       paymentStatus: "paid",
       expireAt: null,
-      paymentAmount: 19900,
+      paymentAmount: 40,
       paidAt: new Date(),
     });
 
