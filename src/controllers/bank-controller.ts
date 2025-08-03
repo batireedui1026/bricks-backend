@@ -31,8 +31,7 @@ export const createInvoice = async (req: Request, res: Response) => {
       maximum_amount: null,
       amount: 85000,
       callback_url:
-        "https://steamhub.mn/api/v1/payment/payment_id?payment_id=" +
-        payment_id,
+        "http://steamhub.mn/api/v1/payment/payment_id?payment_id=" + payment_id,
       sender_staff_code: "online",
       note: null,
       invoice_receiver_data: {
