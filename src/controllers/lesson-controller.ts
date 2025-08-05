@@ -53,6 +53,6 @@ export const getLesson = async (req: Request, res: Response): Promise<void> => {
     res.status(200).json({ message: "Хичээлүүд олдлоо", subjects });
   } catch (error) {
     console.error("Error fetching subjects:", error);
-    res.status(500).json({ message: "Алдаа гарлаа", error });
+    res.status(500).json({ message: "Алдаа гарла", error });
   }
 };
